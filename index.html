@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head><title>CSCE 274 - Speed Run</title>
-<style>
-body {background-color: rgb(255, 224, 167);
-li {margin: 10px;}
-
-}
-
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tuberculosis | Infectious Disease Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background: #004d40;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+        h1, h2 {
+            color: #00695c;
+        }
+        .references {
+            background: #e0f2f1;
+            padding: 10px;
+            border-left: 5px solid #004d40;
+        }
+        .citation {
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-<ul>
-    <h1>Speed Setup ♫</h1>
-    <ul><li><a href="project1.pdf" target="_blank">project1</a></li><li><a href="hw2.pdf" target="_blank">hw2</a></li></ul>
-    <h3>- Speed Cloning</h3>
-<li><p>git clone https://suprawee29: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@github.com/suprawee29/robot.gi</p></li>
-<li><p>git status</p></li>
-<h3>- Speed dts/docker installing</h3>
-<li>https://docs.docker.com/engine/install/ubuntu/</li>
-<ul><li>sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</li>
-<li>sudo docker run hello-world (for testing)</li></ul>
-<li>sudo apt update</li>
-<li>sudo apt install -y python3-pip git git-lfs curl wget</li>
-<li>sudo adduser `whoami` docker</li>
-<li>sudo apt-get install docker-compose</li>
-<ul><li>Make sure the Docker version is v.0.8.0+ and buildx version v1.4.0+ </li><li>
-    docker --version
-</li><li>docker buildx --version</li></ul>
-<h3>- Speed dts build</h3>
-<li><p>dts devel build --pull</p></li>
-<li><p>docker image ls</p></li>
-<ul><li>Look for something like duckietown/(your_repo_name)</li></ul>
-<li>dts devel run -M -- --entrypoint=/bin/bash</li>
-<li>cd /code/catkin_ws/</li>
-<li>catkin build</li>
-<li>source devel/setup.bash</li>
-<h3>- Duckietown Shell</h3>
-<li>pip3 install --no-cache-dir --user --upgrade duckietown-shell</li>
-<li>dts --set-version daffy</li>
-<li>sudo apt install open-vm-tools</li>
-<img src="https://cdn.discordapp.com/attachments/1282190587390328976/1282699891524501627/IMG_9010.jpg?ex=66e04edd&is=66defd5d&hm=f0e0b616b339c37614402364d5b13200211880448a8a3b815a3360a19801a492&" width="800" alt="">
-</ul>   
+    <header>
+        <h1>Tuberculosis (TB)</h1>
+        <p>By: Suprawee Pongpeeradech | Computer Engineering Major</p>
+    </header>
+
+    <div class="container">
+        <h2>Pathogen & Disease</h2>
+        <p><strong>Pathogen:</strong> <em>Mycobacterium tuberculosis</em><br>
+        <strong>Disease:</strong> Tuberculosis (TB)</p>
+
+        <h2>How It Causes Disease</h2>
+        <p>TB is caused by inhaling airborne droplets containing <em>M. tuberculosis</em>. Once in the lungs, the bacteria can multiply and evade immune detection by residing inside macrophages.<span class="citation"> (CDC, 2023)</span></p>
+
+        <h2>Symptoms</h2>
+        <p>Common symptoms include chronic cough, fever, night sweats, weight loss, and fatigue. In more severe cases, coughing up blood can occur.<span class="citation"> (WHO, 2022)</span></p>
+
+        <h2>Immune Response</h2>
+        <p>The immune system responds by sending macrophages and T-cells to the infection site, forming granulomas to contain the bacteria. However, the pathogen can persist in a latent state.<span class="citation"> (Mayo Clinic, 2023)</span></p>
+
+        <h2>Treatment</h2>
+        <p>TB is treated with a combination of antibiotics over several months, including isoniazid, rifampin, pyrazinamide, and ethambutol.<span class="citation"> (CDC, 2023)</span></p>
+
+        <h2>Prevention</h2>
+        <p>Preventative measures include the BCG vaccine, wearing masks in high-risk areas, and ensuring good ventilation. Early detection and treatment of latent TB are also crucial.<span class="citation"> (WHO, 2022)</span></p>
+
+        <h2>References</h2>
+        <div class="references">
+            <ul>
+                <li>Centers for Disease Control and Prevention. 2023. Tuberculosis (TB). <em>https://www.cdc.gov/tb/</em></li>
+                <li>World Health Organization. 2022. Tuberculosis. <em>https://www.who.int/news-room/fact-sheets/detail/tuberculosis</em></li>
+                <li>Mayo Clinic. 2023. Tuberculosis. <em>https://www.mayoclinic.org/diseases-conditions/tuberculosis/</em></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Infectious Disease Project &copy; 2025</p>
+    </footer>
 </body>
 </html>
-

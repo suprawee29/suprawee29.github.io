@@ -2,86 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tuberculosis | Infectious Disease Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header, footer {
-            background: #004d40;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-        }
-        a{color: #53ffeb;
-        }
-        .container {
-            max-width: 960px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-        }
-        h1, h2 {
-            color: #00b19d;
-        }
-        .references {
-            background: #e0f2f1;
-            padding: 10px;
-            border-left: 5px solid #004d40;
-        }
-        .citation {
-            font-style: italic;
-        }
-        .links{color: #00b19d;
-        text-decoration: none;}
-    </style>
+    <title>CSCE 567: Final Project</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <header>
-        <h1>Tuberculosis (TB)</h1>
-        <p>By</p>
-        <p>Suprawee Pongpeeradech | <a href= "mailto:suprawee@email.sc.edu">suprawee@email.sc.edu</a></p>
-        <p>Hayden Waggoner | <a href= "mailto:waggoneh@email.sc.edu">waggoneh@email.sc.edu</a></p>
-        <p>Blake Gootee | <a href= "mailto:bgootee@email.sc.edu">bgootee@email.sc.edu</a></p>
+<body class="page">
+    <header class="header">
+        <h1 class="main-title">CSCE 567: Final Project | Suprawee Pongpeeradech</h1>
     </header>
 
-    <div class="container">
-        <h2>Pathogen & Disease</h2>
-        <p><strong>Pathogen:</strong> <em>Mycobacterium tuberculosis</em><br>
-        <strong>Disease:</strong> Tuberculosis (TB)</p>
+    <section class="section">
+        <h2 class="section-title">Project Purpose</h2>
+        <p class="paragraph">
+            The purpose of this project is to inform researchers, policymakers, and students of global animal population trends over time through interactive visualizations.
+        </p>
+    </section>
 
-        <h2>How It Causes Disease</h2>
-        <p></p>Tuberculosis (TB) spreads when someone breathes in tiny droplets from an infected person’s cough or sneeze. Once the bacteria reach the lungs, <em>M. tuberculosis</em> can start multiplying and hide from the immune system by taking shelter inside immune cells called macrophages.<span class="citation"> (CDC, 2023)</span></p>
+    <section class="section">
+        <h2 class="section-title">I) Introduction</h2>
+        <p class="paragraph">
+            Biodiversity plays a crucial role in maintaining ecosystem balance. However, global wildlife
+            populations are declining due to habitat destruction, climate change, and human activities.
+            According to the World Wildlife Fund (WWF), monitored wildlife populations have decreased
+            by an average of 73% from 1970 to 2020. Understanding these trends is essential for researchers
+            and policymakers to take necessary conservation measures.
+            This project aims to visualize global animal population trends over time, helping researchers
+            analyze species population shifts and identify areas of concern. By leveraging Tableau, this
+            project will provide interactive visualizations to explore species-specific and region-specific
+            trends.
+        </p>
+        <p class="paragraph">
+            The visualizations will highlight key trends such as regional population declines, species recovery patterns in certain habitats, and geographic hotspots where biodiversity loss is most severe. These insights aim to help prioritize conservation efforts across different regions and species.
+        </p>
+    </section>
 
-        <h2>Symptoms</h2>
-        <p>People with TB often experience a lingering cough, fever, night sweats, weight loss, and constant tiredness. In more serious cases, they might even cough up blood.<span class="citation"> (WHO, 2022)</span></p>
+    <section class="section">
+        <h3 class="subsection-title">Data Provided by</h3>
+        <a class="link" href="https://knb.ecoinformatics.org/view/doi:10.5063/F1BZ63Z8" target="_blank">The Global Population Dynamics Database</a>
+        <br>
 
-        <h2>Immune Response</h2>
-        <p>When M. tuberculosis enters the body, the immune system fights back by sending in macrophages and T-cells. These cells form clumps called granulomas to trap the bacteria. Even then, the bacteria can sometimes stay hidden in the body without causing symptoms—this is called latent TB.<span class="citation"> (Mayo Clinic, 2023)</span></p>
-
-        <h2>Treatment</h2>
-        <p>Treating TB takes time and consistency. Doctors usually prescribe a mix of antibiotics like isoniazid, rifampin, pyrazinamide, and ethambutol that need to be taken for several months to fully clear the infection.<span class="citation"> (CDC, 2023)</span></p>
-        
-        <h2>Prevention</h2>
-        <p>To help prevent TB, people can get the BCG vaccine, wear masks in high-risk areas, and make sure indoor spaces have good airflow. Catching and treating latent TB early is also a key part of stopping its spread.<span class="citation"> (WHO, 2022)</span></p>
-
-        <h2>References</h2>
-        <div class="references">
-            <ul>
-                <li>Centers for Disease Control and Prevention. 2023. Tuberculosis (TB). <a target="_blank" href="https://www.cdc.gov/tb/"><em class="links">https://www.cdc.gov/tb/</em></a></li>
-                <li>World Health Organization. 2022. Tuberculosis. <a target="_blank" href="https://www.who.int/news-room/fact-sheets/detail/tuberculosis"><em class="links">https://www.who.int/news-room/fact-sheets/detail/tuberculosis</em></a></li>
-                <li>Mayo Clinic. 2023. Tuberculosis. <a target="_blank" href="https://www.mayoclinic.org/diseases-conditions/tuberculosis/symptoms-causes/syc-20351250"><em class="links">https://www.mayoclinic.org/diseases-conditions/tuberculosis/symptoms-causes/syc-20351250</em></a></li>
+        <section class="section">
+            <h2 class="section-title">IUCN Red List Categories Overview</h2>
+            <p class="paragraph">
+                The International Union for Conservation of Nature (IUCN) Red List is the world's most comprehensive source of information on the global extinction risk status of animal, plant, and fungal species. 
+            </p>
+            <p class="paragraph">
+                Species are classified into categories based on population trends, range sizes, and survival prospects. These categories include:
+            </p>
+            <ul class="list">
+                <li><b>Extinct (EX)</b> and <b>Extinct in the Wild (EW)</b>: Species that no longer exist or only survive in captivity.</li>
+                <li><b>Critically Endangered (CR)</b>, <b>Endangered (EN)</b>, and <b>Vulnerable (VU)</b>: Species facing extremely high, high, or high-to-moderate risk of extinction.</li>
+                <li><b>Near Threatened (NT)</b> and <b>Least Concern (LC)</b>: Species that are still widespread but may be at risk in the future.</li>
+                <li><b>Data Deficient (DD)</b> and <b>Not Evaluated (NE)</b>: Species that lack enough data or have not been assessed yet.</li>
             </ul>
-        </div>
-    </div>
+            <p class="paragraph">
+                These categories help guide conservation priorities and raise awareness about the urgency of protecting global biodiversity.
+            </p>
+            <img class="image" src="0_5lreOpeazHNAEKhG.png" alt="Dataset Image">
+        </section>
+        
 
-    <footer>
-        <p>Group Project | BIOL101L SPRING 2025</p>
-    </footer>
+        <div class="visualization">
+            <h3 class="subsection-title">Population of Global Wildlife Map (1900–2000)</h3>
+            <div class='tableauPlaceholder' id='viz1745867380147' style='position: relative'><noscript><a href='#'><img alt='Population of Global Wildlife Map (1900–2000) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationofGlobalWildlifeMap19002000&#47;PopulationofGlobalWildlifeMap19002000&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PopulationofGlobalWildlifeMap19002000&#47;PopulationofGlobalWildlifeMap19002000' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationofGlobalWildlifeMap19002000&#47;PopulationofGlobalWildlifeMap19002000&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745867380147');                    var vizElement = divElement.getElementsByTagName('object')[0];                    var maxWidth = 1000; // maximum width you want
+                var realWidth = Math.min(divElement.offsetWidth, maxWidth);
+                vizElement.style.width = realWidth + 'px';
+                vizElement.style.height = (realWidth * 0.75) + 'px';                 var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </iframe>
+        </div>
+        <p class="paragraph">
+            Note: Instead of a traditional heatmap with rows and columns, this visualization uses a location-based population density map. Each point represents a recorded observation's geographic coordinate, allowing users to explore spatial patterns of species populations around the world.
+        </p>
+        <p class="paragraph">
+            This visualization shows the distribution and population size of different animal species around the world.
+            Each dot represents a location where a species was recorded.
+            Color represents population size:
+            Red means lower population.
+            Green means higher population (closer to 50,000).
+            On the right side, there's a filter panel where users can select or deselect species to focus on specific animals.
+        </p>
+
+        <div class="visualization">
+            <div class='tableauPlaceholder' id='viz1745867718311' style='position: relative'><noscript><a href='#'><img alt='Average Wildlife Population Across All Species by Biotope Type (1900–2000) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationofGlobalWildlifeMap19002000&#47;AverageWildlifePopulationAcrossAllSpeciesbyBiotopeType19002000&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PopulationofGlobalWildlifeMap19002000&#47;AverageWildlifePopulationAcrossAllSpeciesbyBiotopeType19002000' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationofGlobalWildlifeMap19002000&#47;AverageWildlifePopulationAcrossAllSpeciesbyBiotopeType19002000&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1745867718311');                    var vizElement = divElement.getElementsByTagName('object')[0]; var maxWidth = 1000; // maximum width you want
+                var realWidth = Math.min(divElement.offsetWidth, maxWidth);
+                vizElement.style.width = realWidth + 'px';
+                vizElement.style.height = (realWidth * 0.75) + 'px';              var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+
+        <p class="paragraph">
+            This visualization shows the average animal population across different biotope types (habitats) recorded between 1900 and 2000.
+            The x-axis represents the type of habitat, such as Marine, Grassland, Coastal, or Urban areas. 
+            The y-axis shows the average number of individuals recorded in that habitat type.
+            Each bar is divided into segments colored by country, illustrating which countries contributed data to the average for each biotope.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">II) Challenges Encountered and Addressed</h2>
+        <p class="paragraph">
+            One challenge was that a density map could not be created properly because the dataset's coordinates were very scattered and uneven. Many species had only a few data points or were concentrated in small areas, making density calculations unreliable.
+        </p>
+        <p class="paragraph">
+            Another limitation is that the dataset itself is relatively old and some records are outdated. Also, each species dataset covers only a small time range rather than continuous long-term monitoring, making it harder to show long-term trends clearly.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">III) Design Decisions</h2>
+        <h3 class="subsection-title">Population of Global Wildlife Map (1900–2000)</h3>
+        <ul class="list">
+            <li><b>Map Style:</b> A clean grayscale background was chosen to make the population points stand out.</li>
+            <li><b>Color Encoding:</b> Light to dark blue gradient represents population size.</li>
+            <li><b>Interactivity:</b> Filter panel and tooltips showing species info.</li>
+            <li><b>Reasoning:</b> Easier to detect regions with high or low wildlife population visually.</li>
+        </ul>
+
+        <h3 class="subsection-title">Average Wildlife Population Across All Species by Biotope Type</h3>
+        <ul class="list">
+            <li><b>Chart Type:</b> Stacked bar chart.</li>
+            <li><b>X-Axis:</b> Biotope types like Marine, Grassland, Urban.</li>
+            <li><b>Y-Axis:</b> Average population recorded.</li>
+            <li><b>Color Encoding:</b> Different colors for countries.</li>
+            <li><b>Interactivity:</b> Hover to see details.</li>
+        </ul>
+
+        <p class="paragraph"><b>Overall Goal:</b> Keep visualizations simple, clear, and interactive for easier exploration.</p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">IV) Future Work</h2>
+        <ul class="list">
+            <li>Expand the time range with more recent data.</li>
+            <li>Add more detailed species-level analysis.</li>
+            <li>Improve global spatial coverage with additional datasets.</li>
+            <li>Introduce predictive modeling for forecasting trends.</li>
+            <li>Enhance user interactivity (e.g., time sliders, threat levels).</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">V) Conclusion</h2>
+        <p class="paragraph">
+            This project successfully visualized global animal population trends between 1900 and 2000 using Tableau dashboards. Despite data challenges, it provides accessible insights for researchers, policymakers, and students. 
+            Future enhancements like adding predictive models and updated data will further improve its utility for biodiversity conservation efforts.
+        </p>
+    </section>
+
 </body>
 </html>
